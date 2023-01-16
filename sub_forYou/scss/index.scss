@@ -1,0 +1,108 @@
+@import './style.scss';
+@import './reset.scss';
+@import './mixin.scss';
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @include responsive(pc-screens) {
+        width: 1380px;
+        padding: 0 10px;
+    }
+}
+body {
+    background-color: #080e2b;
+}
+
+// * ===================== header ===================== *
+header {
+    width: 100%;
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        
+        .logo {
+            transform: translateY(-50%);
+            padding-top: 100px;
+            margin-left: 20px;
+            margin-bottom: -50px;
+            
+            @include responsive(pc-screens) {
+                left: 41px;
+            }
+
+            a {
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .git {
+            padding-top: 25px;
+            margin-right: 20px;
+
+            a {
+                &:hover {
+                    opacity: 0.5;
+                }
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+main {
+    img {
+        width: 35%;
+        position: relative;
+        left: 35%;
+    }
+}
+
+
+// * ===================== footer ===================== *
+
+footer{
+    p {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: $title-color;
+        font-size: calc(0.2em + 16px);
+        font-family: 'myriad Pro Regular';
+        font-weight: 600;
+        text-align: center;
+        @include responsive(pc-screens) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-size: 36px;
+        }
+    }
+
+    .fixed-menu {
+        position: fixed;
+        right: 10px;
+        bottom: 5px;
+
+        @include responsive(pc-screens) {
+            right: 90px;
+            bottom: 50px;
+        }
+
+        img {
+            width: 40px;
+            @include responsive(pc-screens) {
+                width: 48px;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}

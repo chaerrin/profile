@@ -1,0 +1,47 @@
+@import "./style.scss";
+@import "./mixin.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition-duration: 0.8s;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+p {
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+
+hr {
+    color: #fff;
+}
+
+
+header,
+main, 
+footer {
+    display: block;
+}

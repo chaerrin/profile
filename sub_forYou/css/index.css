@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition-duration: 0.8s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+
+hr {
+  color: #fff;
+}
+
+header,
+main,
+footer {
+  display: block;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1380px;
+    padding: 0 10px;
+  }
+}
+
+body {
+  background-color: #080e2b;
+}
+
+header {
+  width: 100%;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+}
+header .header .logo {
+  transform: translateY(-50%);
+  padding-top: 100px;
+  margin-left: 20px;
+  margin-bottom: -50px;
+}
+@media screen and (min-width: 1024px) {
+  header .header .logo {
+    left: 41px;
+  }
+}
+header .header .logo a:hover {
+  opacity: 0.5;
+}
+header .header .git {
+  padding-top: 25px;
+  margin-right: 20px;
+}
+header .header .git a:hover {
+  opacity: 0.5;
+}
+header .header .git a img {
+  width: 50px;
+}
+
+main img {
+  width: 35%;
+  position: relative;
+  left: 35%;
+}
+
+footer p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  font-size: calc(0.2em + 16px);
+  font-family: "myriad Pro Regular";
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  footer p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 36px;
+  }
+}
+footer .fixed-menu {
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+}
+@media screen and (min-width: 1024px) {
+  footer .fixed-menu {
+    right: 90px;
+    bottom: 50px;
+  }
+}
+footer .fixed-menu img {
+  width: 40px;
+}
+@media screen and (min-width: 1024px) {
+  footer .fixed-menu img {
+    width: 48px;
+  }
+}
+footer .fixed-menu img:hover {
+  opacity: 0.5;
+}
