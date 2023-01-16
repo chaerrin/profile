@@ -1,0 +1,1175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition-duration: 0.8s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial;
+  font-color: #fff;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: normal;
+  font-color: #fff;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-color: #fff;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: normal;
+  font-color: #fff;
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+
+hr {
+  color: #fff;
+}
+
+header,
+main,
+footer {
+  display: block;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1380px;
+    padding: 0 10px;
+  }
+}
+
+body {
+  background-color: #080e2b;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5em;
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    text-align: left;
+    font-size: 150px;
+    font-weight: bold;
+  }
+}
+
+h3 {
+  font-size: 36px;
+  font-family: "Lemon/Milk light", sans-serif;
+  font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+section {
+  padding-top: 400px;
+}
+
+header {
+  width: 100%;
+}
+header .flex-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 63px;
+}
+header .flex-box .logo {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 1024px) {
+  header .flex-box .logo {
+    left: 41px;
+  }
+}
+header .flex-box .overlay {
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+@media screen and (min-width: 768px) {
+  header .flex-box .overlay {
+    display: none;
+  }
+}
+header .flex-box .overlay a {
+  padding-bottom: 30px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+header .flex-box .overlay a:hover, header .flex-box .overlay a:focus {
+  color: rgba(199, 197, 197, 0.4862745098);
+}
+header .flex-box .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+header .flex-box .overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+header .flex-box .span {
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  header .flex-box .span {
+    display: none;
+  }
+}
+header .flex-box nav {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  header .flex-box nav {
+    display: block;
+    right: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .flex-box nav {
+    right: 41px;
+  }
+}
+header .flex-box nav .gnb {
+  display: flex;
+  justify-content: space-between;
+}
+header .flex-box nav .gnb li {
+  padding: 0 20px;
+}
+header .flex-box nav .gnb li a {
+  color: #fff;
+  font-family: "Lemon/Milk light", sans-serif;
+  transition-duration: 0.3s;
+}
+
+main .home {
+  margin-top: -65px;
+  padding-top: 130px;
+  padding-bottom: 200px;
+}
+@media screen and (min-width: 1024px) {
+  main .home {
+    margin-top: -180px;
+    padding-top: 315px;
+    padding-bottom: 400px;
+  }
+}
+main .home .flex-box {
+  position: relative;
+}
+main .home .flex-box .text {
+  height: 150px;
+  font-family: "myriad Pro Regular";
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+@media screen and (min-width: 1024px) {
+  main .home .flex-box .text {
+    font-size: 100px;
+    height: 300px;
+  }
+}
+main .home .flex-box .icon ul {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .home .flex-box .icon ul li img {
+  width: 45px;
+  margin-right: 25px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1024px) {
+  main .home .flex-box .icon ul li img {
+    width: 65px;
+    margin-right: 60px;
+  }
+}
+main .home .flex-box .icon ul li:last-child {
+  margin-right: -25px;
+}
+@media screen and (min-width: 1024px) {
+  main .home .flex-box .icon ul li:last-child {
+    margin-right: -60px;
+  }
+}
+main .home .flex-box .icon ul li:hover {
+  opacity: 0.5;
+}
+main .about {
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  main .about {
+    padding-top: 200px;
+    padding-bottom: 350px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .about .flex-box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+main .about .flex-box h3 {
+  text-align: center;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  main .about .flex-box h3 {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 50px;
+  }
+}
+main .about .flex-box .text {
+  margin-top: 280px;
+}
+@media screen and (min-width: 1024px) {
+  main .about .flex-box .text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .about .flex-box .text .one {
+    margin-right: 150px;
+  }
+}
+main .about .flex-box .text .one img {
+  width: 220px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 7px solid #44414f;
+}
+@media screen and (min-width: 1024px) {
+  main .about .flex-box .text .one img {
+    position: relative;
+    width: 310px;
+    margin-left: 0px;
+  }
+}
+main .about .flex-box .text .intro {
+  color: #fff;
+  margin-top: 250px;
+}
+@media screen and (min-width: 1024px) {
+  main .about .flex-box .text .intro {
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+}
+main .about .flex-box .text .intro p {
+  text-align: left;
+  margin-top: 20px;
+  color: #fff;
+  margin-top: 25px;
+}
+@media screen and (min-width: 1024px) {
+  main .about .flex-box .text .intro p {
+    margin-top: 50px;
+  }
+}
+main #skills {
+  padding-top: 100px;
+}
+@media screen and (min-width: 1024px) {
+  main #skills {
+    padding-top: 40px;
+  }
+}
+main .skills {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+main .skills .container {
+  width: 100%;
+  margin: 0 auto;
+}
+main .skills .container h3 {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Lemon/Milk light", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container h3 {
+    margin-left: 250px;
+    text-align: left;
+    font-size: 36px;
+  }
+}
+main .skills .container .circle-menu {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu {
+    width: 800px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu {
+    width: 1000px;
+  }
+}
+main .skills .container .circle-menu .circle {
+  position: absolute;
+  top: 45%;
+  left: 29%;
+  -webkit-transform: translate(-50%, -29%);
+  transform: translate(-50%, -29%);
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .circle {
+    left: 50%;
+  }
+}
+main .skills .container .circle-menu .circle div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .circle div {
+    border: 3px solid #fff;
+  }
+}
+main .skills .container .circle-menu .circle div:first-child {
+  width: 470px;
+  height: 470px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .circle div:first-child {
+    width: 600px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .circle div:first-child {
+    width: 800px;
+    height: 800px;
+  }
+}
+main .skills .container .circle-menu .circle div:nth-child(2) {
+  width: 385px;
+  height: 385px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .circle div:nth-child(2) {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .circle div:nth-child(2) {
+    width: 675px;
+    height: 675px;
+  }
+}
+main .skills .container .circle-menu .circle div:last-child {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .circle div:last-child {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .circle div:last-child {
+    width: 550px;
+    height: 550px;
+  }
+}
+main .skills .container .circle-menu .list {
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list {
+    height: 800px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list {
+    height: 1000px;
+  }
+}
+main .skills .container .circle-menu .list li {
+  list-style: none;
+}
+main .skills .container .circle-menu .list li div {
+  animation: forwardRotate 5s linear infinite;
+}
+main .skills .container .circle-menu .list li div:hover {
+  animation: forwardRotate 0s linear infinite;
+}
+main .skills .container .circle-menu .list li div img {
+  width: 100%;
+}
+@keyframes forwardRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main .skills .container .circle-menu .list .adobe {
+  position: absolute;
+  top: 21%;
+  left: 25.5%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .adobe {
+    width: 55px;
+    height: 55px;
+    top: 17%;
+    left: 47%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .adobe {
+    width: 60px;
+    height: 60px;
+    top: 15%;
+    left: 50%;
+  }
+}
+main .skills .container .circle-menu .list .adobe:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .ai {
+  position: absolute;
+  top: 63%;
+  left: 25.5%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .ai {
+    width: 55px;
+    height: 55px;
+    top: 65%;
+    left: 47%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .ai {
+    width: 60px;
+    height: 60px;
+    top: 69%;
+    left: 47%;
+  }
+}
+main .skills .container .circle-menu .list .ai:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .c {
+  position: absolute;
+  top: 20%;
+  left: 9%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .c {
+    width: 55px;
+    height: 55px;
+    top: 22%;
+    left: 22%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .c {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 21%;
+  }
+}
+main .skills .container .circle-menu .list .c:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .java {
+  position: absolute;
+  top: 45%;
+  left: -2%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .java {
+    width: 55px;
+    height: 55px;
+    top: 57%;
+    left: 20%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .java {
+    width: 60px;
+    height: 60px;
+    top: 61%;
+    left: 20%;
+  }
+}
+main .skills .container .circle-menu .list .java:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .sql {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .sql {
+    width: 55px;
+    height: 55px;
+    top: 60%;
+    left: 71%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .sql {
+    width: 60px;
+    height: 60px;
+    top: 55%;
+    left: 78%;
+  }
+}
+main .skills .container .circle-menu .list .sql:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .python {
+  position: absolute;
+  top: 40%;
+  left: 53%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .python {
+    width: 55px;
+    height: 55px;
+    top: 35%;
+    left: 77%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .python {
+    width: 60px;
+    height: 60px;
+    top: 30%;
+    left: 78%;
+  }
+}
+main .skills .container .circle-menu .list .python:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .html {
+  position: absolute;
+  top: 6.5%;
+  left: 30%;
+  width: 60px;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .html {
+    width: 70px;
+    height: 70px;
+    top: 3%;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .html {
+    width: 75px;
+    height: 75px;
+    top: 1%;
+    left: 50%;
+  }
+}
+main .skills .container .circle-menu .list .html:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .css {
+  position: absolute;
+  top: 20%;
+  left: 53%;
+  width: 60px;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .css {
+    width: 70px;
+    height: 70px;
+    top: 18%;
+    left: 76%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .css {
+    width: 75px;
+    height: 75px;
+    top: 17%;
+    left: 78%;
+  }
+}
+main .skills .container .circle-menu .list .css:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .sass {
+  position: absolute;
+  top: 59%;
+  left: 54%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .sass {
+    width: 55px;
+    height: 55px;
+    top: 70%;
+    left: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .sass {
+    width: 60px;
+    height: 60px;
+    top: 70%;
+    left: 75%;
+  }
+}
+main .skills .container .circle-menu .list .sass:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .js {
+  position: absolute;
+  top: 74%;
+  left: 16%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .js {
+    width: 55px;
+    height: 55px;
+    top: 70%;
+    left: 21%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .js {
+    width: 60px;
+    height: 60px;
+    top: 75%;
+    left: 24%;
+  }
+}
+main .skills .container .circle-menu .list .js:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .jq {
+  position: absolute;
+  top: 58%;
+  left: -4%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .jq {
+    width: 55px;
+    height: 55px;
+    top: 40%;
+    left: 9%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .jq {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 8%;
+  }
+}
+main .skills .container .circle-menu .list .jq:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .react {
+  position: absolute;
+  top: 28%;
+  left: -5%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .react {
+    width: 55px;
+    height: 55px;
+    top: 11%;
+    left: 25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .react {
+    width: 60px;
+    height: 60px;
+    top: 10%;
+    left: 23%;
+  }
+}
+main .skills .container .circle-menu .list .react:hover {
+  opacity: 0.5;
+}
+main .skills .container .cont_area {
+  position: absolute;
+  margin-top: -450px;
+  margin-left: 100px;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .cont_area {
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 50%;
+    width: 350px;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .cont_area {
+    width: 420px;
+    margin-top: -550px;
+    margin-left: 50%;
+  }
+}
+main .skills .container .cont_area div {
+  display: none;
+}
+main .skills .container .cont_area div:first-child {
+  display: block;
+}
+main .skills .container .cont_area div img {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .cont_area div img {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .cont_area div img {
+    width: 35%;
+    margin-bottom: 15px;
+  }
+}
+main .skills .container .cont_area div h4 {
+  font-size: 30px;
+  margin-bottom: -4px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .cont_area div h4 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .cont_area div h4 {
+    font-size: 2.5em;
+  }
+}
+main .skills .container .cont_area div p {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .cont_area div p {
+    width: 65%;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: auto;
+    margin-top: 13px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .cont_area div p {
+    width: 80%;
+    font-size: 1.05em;
+    margin-left: 50px;
+  }
+}
+main #portfolio {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio {
+    margin-bottom: 100px;
+    padding-top: 100px;
+  }
+}
+main #portfolio .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  justify-content: center;
+  left: 0px;
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+main #portfolio .swiper-slide h2 {
+  font-family: "Lemon/Milk light", sans-serif;
+  font-weight: bold;
+  margin-left: 0;
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .swiper-slide h2 {
+    margin: 0 auto;
+  }
+}
+main #portfolio .swiper-slide img {
+  width: 250px;
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .swiper-slide img {
+    margin-left: 100px;
+    margin-right: 250px;
+    width: 450px;
+  }
+}
+main #portfolio .swiper-slide .text {
+  margin-left: 80px;
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .swiper-slide .text {
+    margin-right: 100px;
+  }
+}
+main #portfolio .swiper-slide .text h3 {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: "SCoreDream";
+  font-weight: 200;
+  font-size: 24px;
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .swiper-slide .text h3 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+}
+main #portfolio .swiper-slide .text h4 {
+  color: #fff;
+  font-size: 24px;
+  font-family: "SCoreDream";
+  font-weight: 200;
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .swiper-slide .text h4 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+}
+main #portfolio .swiper-slide .title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .swiper-slide .title {
+    margin-bottom: 45px;
+  }
+}
+main #portfolio .swiper-slide p {
+  text-align: left;
+  color: #fff;
+  margin-right: 75px;
+  font-family: "SCoreDream";
+  font-weight: 150;
+  font-size: 14px;
+}
+main #portfolio .swiper-slide input[type=button] {
+  width: 100px;
+  float: left;
+  padding: 5px;
+  margin-top: 30px;
+  margin-right: 41px;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #fff;
+  font-family: "Lemon/Milk light", sans-serif;
+}
+main #portfolio .swiper-slide input[type=button]:hover {
+  background-color: #fff;
+  color: #000;
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .swiper-slide input[type=button] {
+    margin-top: 70px;
+    width: 130px;
+    padding: 10px;
+  }
+}
+main .contact {
+  padding-top: 220px;
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  main .contact {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .contact .flex-box {
+    display: flex;
+  }
+}
+main .contact .flex-box h3 {
+  margin-bottom: 46px;
+  flex: 20%;
+  color: #fff;
+  text-align: center;
+}
+main .contact .flex-box form {
+  flex: 80%;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  main .contact .flex-box form .flex-box-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px auto);
+    grid-gap: 20px;
+  }
+}
+main .contact .flex-box form .flex-box-inner div label {
+  display: block;
+  padding: 40px 10px 15px 0;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+@media screen and (min-width: 768px) {
+  main .contact .flex-box form .flex-box-inner div label:first-child {
+    padding-top: 0;
+  }
+}
+main .contact .flex-box form .flex-box-inner div label input {
+  border: 0;
+  margin-left: 30px;
+  background-color: transparent;
+  color: #fff;
+}
+main .contact .flex-box form .flex-box-inner div div {
+  border-bottom: 1px solid #fff;
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  main .contact .flex-box form .flex-box-inner div div {
+    margin-top: 0;
+  }
+}
+main .contact .flex-box form .flex-box-inner div div label {
+  border: 0;
+  padding-top: 0;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  main .contact .flex-box form .flex-box-inner div div label {
+    padding: 0;
+  }
+}
+main .contact .flex-box form .flex-box-inner div div textarea {
+  width: 100%;
+  border: 0;
+  overflow-y: scroll;
+  background-color: transparent;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  main .contact .flex-box form .flex-box-inner div div textarea {
+    overflow-y: hidden;
+  }
+}
+main .contact .flex-box form input[type=button] {
+  float: right;
+  padding: 10px;
+  margin-top: 30px;
+  color: #000;
+  cursor: pointer;
+  border: 0;
+}
+
+footer p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  font-size: calc(0.2em + 16px);
+  font-family: "myriad Pro Regular";
+  font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  footer p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 36px;
+  }
+}
+footer .fixed-menu {
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+}
+@media screen and (min-width: 1024px) {
+  footer .fixed-menu {
+    right: 90px;
+    bottom: 50px;
+  }
+}
+footer .fixed-menu img {
+  width: 40px;
+}
+@media screen and (min-width: 1024px) {
+  footer .fixed-menu img {
+    width: 48px;
+  }
+}
+footer .fixed-menu img:hover {
+  opacity: 0.5;
+}

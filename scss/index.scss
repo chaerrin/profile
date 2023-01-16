@@ -1,0 +1,1068 @@
+@import './style.scss';
+@import './reset.scss';
+@import './mixin.scss';
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @include responsive(pc-screens) {
+        width: 1380px;
+        padding: 0 10px;
+    }
+}
+
+body {
+    background-color: #080e2b;
+}
+
+h2 {
+    text-align: center;
+    color: $title-color;
+    font-size: 2.5em;
+
+    @include responsive(pc-screens) {
+        text-align: left;
+        font: {
+            size: 150px;
+            weight: bold;
+        }
+    }
+}
+h3 {
+    font-size: 36px;
+    font-family: $eng_title_font;
+    font-weight: 600;
+    @include responsive(pc-screens) {
+        font-size: 36px;
+    }
+}
+h4 {
+    font-size: 18px;
+    @include responsive(pc-screens) {
+        font-size: 24px;
+    }
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    @include responsive(pc-screens) {
+        font-size: 18px;
+    }
+}
+
+section {
+    padding-top: 400px;
+}
+
+// * ===================== header ===================== *
+header {
+    width: 100%;
+    
+    .flex-box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 63px;
+
+        .logo {
+            position: absolute;
+            left: 10px; top: 50%;
+            transform: translateY(-50%);
+
+            @include responsive(pc-screens) {
+                left: 41px;
+            }
+        }
+
+        .overlay {
+            display: block;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+            transition: 0.5s;
+
+            @include responsive(tablet-screens) {
+                display: none;
+            }
+
+            a {
+                padding-bottom: 30px;
+                text-decoration: none;
+                font-size: 36px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+
+                &:hover, &:focus {
+                    color: #c7c5c57c;
+                }
+            }
+
+
+            .closebtn {
+                position: absolute;
+                top: 20px;
+                right: 45px;
+                font-size: 60px;
+            }
+
+            .overlay-content {
+                position: relative;
+                top: 25%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+
+        .span {
+            position: absolute;
+            top: 15%;
+            right: 3%;
+            font-size : 30px;
+            cursor : pointer;
+            color : #fff;
+
+            @include responsive(tablet-screens) {
+                display: none;
+            }
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+
+            @include responsive(tablet-screens) {
+                display: block;
+                right: 10px;
+            }
+
+            @include responsive(pc-screens) {
+                right: 41px;
+            }
+            
+            .gnb {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    padding: 0 20px;
+                    a {
+                        color: $title-color;
+                        font-family: $eng_title_font;
+                        transition-duration: 0.3s;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+} // header
+
+// * ===================== main ===================== *
+
+main {
+    .home {
+        margin-top: -65px;
+        padding-top: 130px;
+        padding-bottom: 200px;
+        @include responsive(pc-screens) {
+            margin-top: -180px;
+            padding-top: 315px;
+            padding-bottom: 400px;
+        }
+        .flex-box {
+            position: relative;
+            .text {
+                height: 150px;
+                font-family: 'myriad Pro Regular';
+                font-weight: 600;
+                text-align: center;
+                color: #fff;
+                font-size: 50px;
+
+                @include responsive(pc-screens) {
+                    font-size: 100px;
+                    height: 300px;
+                }
+            }
+            .icon {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    li {
+                        img {
+                            width: 45px;
+                            margin-right: 25px;
+                            margin-top: 30px;
+                            @include responsive(pc-screens) {
+                                width: 65px;
+                                margin-right: 60px;
+                            }
+                        }
+                        &:last-child {
+                            margin-right: -25px;
+                            @include responsive(pc-screens) {
+                                margin-right: -60px;
+                            }
+                        }
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about {
+        text-align: left;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        
+        @include responsive(pc-screens) {
+            padding-top: 200px;
+            padding-bottom: 350px;
+        }
+
+        .flex-box {
+            @include responsive(pc-screens) {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            h3 {
+                text-align: center;
+                color: #fff;
+                @include responsive(pc-screens) {
+                    position: absolute;
+                    margin-left: 600px;
+                    margin-top: 50px;
+                }
+            }
+
+            .text {
+                margin-top: 280px;
+                @include responsive(pc-screens) {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 100px;
+                }
+                .one {
+                    @include responsive(pc-screens) {
+                        margin-right: 150px;
+                    }
+                    img {
+                        width: 220px;
+                        position: absolute;
+                        top: 10%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-radius: 50%;
+                        border: 7px solid #44414f;
+                        @include responsive(pc-screens) {
+                            position: relative;
+                            width: 310px;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+    
+                .intro {
+                    color: #fff;
+                    margin-top: 250px;
+
+                    @include responsive(pc-screens) {
+                        margin-top: 50px;
+                        margin-left: 150px;
+                    }
+    
+                    p {
+                        text-align: left;
+                        margin-top: 20px;
+                        color: #fff;
+                        margin-top: 25px;
+                        @include responsive(pc-screens) {
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #skills {
+        padding-top: 100px;
+        @include responsive(pc-screens) {
+            padding-top: 40px;
+        }
+    }
+
+    .skills {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+            h3 {
+                text-align: center;
+                font-size: 36px;
+                font-family: $eng_title_font;
+                font-weight: 600;
+                color: #fff;
+                @include responsive(pc-screens) {
+                    margin-left: 250px;
+                    text-align: left;
+                    font-size: 36px;
+                }
+            }
+            
+            .circle-menu {
+                position: relative;
+                width: 700px;
+                margin: 0 auto;
+    
+                @include responsive(tablet-screens) {
+                    width: 800px;
+                }
+            
+                @include responsive(pc-screens) {
+                    width: 1000px;
+                }
+    
+                .circle {
+                    position: absolute;
+                    top: 45%;
+                    left: 29%;
+                    -webkit-transform: translate(-50%, -29%);
+                            transform: translate(-50%, -29%);
+    
+                    @include responsive(tablet-screens) {
+                        left: 50%;
+                    }
+    
+                    div {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        border: 2px solid #fff;
+                        border-radius: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                                transform: translate(-50%, -50%);
+    
+                        @include responsive(tablet-screens) {
+                            border: 3px solid #fff;
+                        }
+    
+                        &:first-child {
+                            width: 470px;
+                            height: 470px;
+    
+                            @include responsive(tablet-screens) {
+                                width: 600px;
+                                height: 600px;
+                            }
+                            @include responsive(pc-screens) {
+                                width: 800px;
+                                height: 800px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            width: 385px;
+                            height: 385px;
+    
+                            @include responsive(tablet-screens) {
+                                width: 500px;
+                                height: 500px;
+                            }
+                            @include responsive(pc-screens) {
+                                width: 675px;
+                                height: 675px;
+                            }
+                        }
+                        &:last-child {
+                            width: 300px;
+                            height: 300px;
+    
+                            @include responsive(tablet-screens) {
+                                width: 400px;
+                                height: 400px;
+                            }
+                            @include responsive(pc-screens) {
+                                width: 550px;
+                                height: 550px;
+                            }
+                        }
+                    }
+                }
+                .list {
+                    width: 100%;
+                    height: 700px;
+                    margin: 0 auto;
+    
+                    @include responsive(tablet-screens) {
+                        height: 800px;
+                    }
+                    @include responsive(pc-screens) {
+                        height: 1000px;
+                    }
+    
+                    li {
+                        list-style: none;
+    
+                        div {
+                            animation: forwardRotate 5s linear infinite;
+
+                            &:hover {
+                                animation: forwardRotate 0s linear infinite;
+                            }
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    @keyframes forwardRotate {
+                        from { transform: rotate(0deg),}
+                        to { transform: rotate(360deg); }
+                    }
+
+                    .adobe {
+                        position: absolute;
+                        top: 21%;
+                        left: 25.5%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 17%;
+                            left: 47%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 15%;
+                            left: 50%;
+                        }
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .ai {
+                        position: absolute;
+                        top: 63%;
+                        left: 25.5%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 65%;
+                            left: 47%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 69%;
+                            left: 47%;
+                        }
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .c {
+                        position: absolute;
+                        top: 20%;
+                        left: 9%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 22%;
+                            left: 22%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 20%;
+                            left: 21%;
+                        }
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .java {
+                        position: absolute;
+                        top: 45%;
+                        left: -2%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 57%;
+                            left: 20%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 61%;
+                            left: 20%;
+                        }
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .sql {
+                        position: absolute;
+                        top: 65%;
+                        left: 40%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 60%;
+                            left: 71%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 55%;
+                            left: 78%;
+                        }
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .python {
+                        position: absolute;
+                        top: 40%;
+                        left: 53%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 35%;
+                            left: 77%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 30%;
+                            left: 78%;
+                        }
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .html {
+                        position: absolute;
+                        top: 6.5%;
+                        left: 30%;
+                        width: 60px;
+                        height: 60px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 70px;
+                            height: 70px;
+                            top: 3%;
+                            left: 50%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 75px;
+                            height: 75px;
+                            top: 1%;
+                            left: 50%;
+                        }
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .css {
+                        position: absolute;
+                        top: 20%;
+                        left: 53%;
+                        width: 60px;
+                        height: 60px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 70px;
+                            height: 70px;
+                            top: 18%;
+                            left: 76%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 75px;
+                            height: 75px;
+                            top: 17%;
+                            left: 78%;
+                        }
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .sass {
+                        position: absolute;
+                        top: 59%;
+                        left: 54%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 70%;
+                            left: 70%;
+                            
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 70%;
+                            left: 75%;
+                            
+                        }        
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .js {
+                        position: absolute;
+                        top: 74%;
+                        left: 16%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 70%;
+                            left: 21%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 75%;
+                            left: 24%;
+                        }        
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .jq {
+                        position: absolute;
+                        top: 58%;
+                        left: -4%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 40%;
+                            left: 9%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 50%;
+                            left: 8%;
+                        }        
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                    .react {
+                        position: absolute;
+                        top: 28%;
+                        left: -5%;
+                        width: 50px;
+                        height: 50px;
+    
+                        @include responsive(tablet-screens) {
+                            width: 55px;
+                            height: 55px;
+                            top: 11%;
+                            left: 25%;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 60px;
+                            height: 60px;
+                            top: 10%;
+                            left: 23%;
+                        }        
+    
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+            
+            .cont_area {
+                position: absolute;
+                margin-top: -450px;
+                margin-left: 100px;
+                color: #fff;
+                text-align: center;
+                width: 200px;
+
+                @include responsive(tablet-screens) {
+                    position: absolute;
+                    margin-top: -450px;
+                    margin-left: 50%;
+                    width: 350px;
+                    text-align: center;
+                    -webkit-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                }
+                @include responsive(pc-screens) {
+                    width: 420px;
+                    margin-top: -550px;
+                    margin-left: 50%;
+                }
+
+                div {
+                    display: none;
+
+                    &:first-child {
+                        display: block;
+                    }
+
+                    img{
+                        display: none;
+
+                        @include responsive(tablet-screens) {
+                            display: block;
+                            width: 30%;
+                            margin: auto;
+                            margin-bottom: 12px;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 35%;
+                            margin-bottom: 15px;
+                        }
+                    }
+                    h4 {
+                        font-size: 30px;
+                        margin-bottom: -4px;
+
+                        @include responsive(tablet-screens) {
+                            font-size: 1.8em;
+                        }
+                        @include responsive(pc-screens) {
+                            font-size: 2.5em;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                        margin-top: 15px;
+                        margin-left: 15px;
+                        text-align: left;
+
+                        @include responsive(tablet-screens) {
+                            width: 65%;
+                            font-size: 1em;
+                            line-height: 1.5em;
+                            margin: auto;
+                            margin-top: 13px;
+                        }
+                        @include responsive(pc-screens) {
+                            width: 80%;
+                            font-size: 1.05em;
+                            margin-left: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #portfolio {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        @include responsive(pc-screens) {
+            margin-bottom: 100px;
+            padding-top: 100px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 700px;
+            justify-content: center;
+            left: 0px;
+            @include responsive(pc-screens) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            h2 {
+                font-family: $eng_title_font;
+                font-weight: bold;
+                margin-left: 0;
+                @include responsive(pc-screens) {
+                    margin: 0 auto;
+                }
+            }
+            img {
+                width: 250px;
+                @include responsive(pc-screens) {
+                    margin-left: 100px;
+                    margin-right: 250px;
+                    width: 450px;
+                }
+            }
+            .text {
+                margin-left: 80px;
+                @include responsive(pc-screens) {
+                    margin-right: 100px;
+                }
+                h3 {
+                    color: #fff;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    font-family: $common_font;
+                    font-weight: 200;
+                    font-size: 24px;
+                    @include responsive(pc-screens) {
+                        margin-bottom: 30px;
+                        font-size: 30px;
+                    }
+                }
+                h4 {
+                    color: #fff;
+                    font-size: 24px;
+                    font-family: $common_font;
+                    font-weight: 200;
+                    @include responsive(pc-screens) {
+                        margin-bottom: 20px;
+                        font-size: 36px;
+                    }
+                }
+            }
+            .title {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                @include responsive(pc-screens) {
+                    margin-bottom: 45px;
+                }
+            }
+            p {
+                text-align: left;
+                color: #fff;
+                margin-right: 75px;
+                font-family: $common_font;
+                font-weight: 150;
+                font-size: 14px;
+                
+            }
+            input[type=button] { 
+                width: 100px;
+                float: left;
+                padding: 5px;
+                margin-top: 30px;
+                margin-right: 41px;
+                text-align: center;
+                background-color: transparent;
+                color: white;
+                cursor: pointer;
+                border: 1px solid #fff;
+                font-family: $eng_title_font;
+                
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+                
+                @include responsive(pc-screens) {
+                    margin-top: 70px;
+                    width: 130px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+
+    .contact {
+        padding-top: 220px;
+        padding-bottom: 100px;
+        @include responsive(pc-screens) {
+            margin-bottom: 200px;
+        }
+
+        .flex-box {
+            @include responsive(pc-screens) {
+                display: flex;
+            }
+
+            h3 {
+                margin-bottom: 46px;
+                flex: 20%;
+                color: #fff;
+                text-align: center;
+            }
+    
+            form {
+                flex: 80%;
+                position: relative;
+                
+                .flex-box-inner {
+                    @include responsive(tablet-screens) {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-auto-rows: minmax(100px auto);
+                        grid-gap: 20px;
+                    }
+
+                    div {
+                        label {
+                            display: block;
+                            padding: 40px 10px 15px 0;
+                            color: $title-color;
+                            border-bottom: 1px solid #fff;
+                            
+                            @include responsive(tablet-screens) {
+                                &:first-child {
+                                    padding-top: 0;
+                                }
+
+                            }
+
+                            input {
+                                border: 0;
+                                margin-left: 30px;
+                                background-color: transparent;
+                                color: #fff;
+                            }
+                
+                        }
+            
+                        div {
+                            border-bottom: 1px solid #fff;
+                            margin-top: 40px;
+
+                            @include responsive(tablet-screens) {
+                                margin-top: 0;
+
+                            }
+                            
+                            label {
+                                border: 0;
+                                padding-top: 0;
+                                margin-bottom: 10px;
+                                
+                                @include responsive(tablet-screens) {
+                                    padding: 0;
+                                    
+                                }
+                            }
+                            
+                            textarea {
+                                width: 100%;
+                                border: 0;
+                                overflow-y: scroll; 
+                                background-color: transparent;
+                                color: #fff;
+                                
+                                @include responsive(pc-screens) {
+                                    overflow-y: hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                input[type=button] {  
+                    float: right;   
+                    padding: 10px;
+                    margin-top: 30px;
+                    color: #000;
+                    cursor: pointer;
+                    border: 0;
+                }
+            } // form
+        }
+    }
+} // main
+
+
+// * ===================== footer ===================== *
+
+footer{
+    p {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: $title-color;
+        font-size: calc(0.2em + 16px);
+        font-family: 'myriad Pro Regular';
+        font-weight: 600;
+        @include responsive(pc-screens) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-size: 36px;
+        }
+    }
+
+    .fixed-menu {
+        position: fixed;
+        right: 10px;
+        bottom: 5px;
+
+        @include responsive(pc-screens) {
+            right: 90px;
+            bottom: 50px;
+        }
+
+        img {
+            width: 40px;
+            @include responsive(pc-screens) {
+                width: 48px;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+    
+}
