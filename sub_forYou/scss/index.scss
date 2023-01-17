@@ -16,11 +16,43 @@ body {
     background-color: #080e2b;
 }
 
+section {
+    padding-bottom: 100px;
+    @include responsive(pc-screens) {
+        padding: 200px;
+    }
+}
+
+h1 {
+    @include responsive(pc-screens) {
+        font-size: 48px;
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    @include responsive(pc-screens) {
+        font-size: 35px;
+    }
+}
+
+h3 {
+    @include responsive(pc-screens) {
+        font-size: 26px;
+    }
+}
+
+p {
+    @include responsive(pc-screens) {
+        font-size: 18px;
+    }
+}
+
 // * ===================== header ===================== *
 header {
     width: 100%;
     
-    .header {
+    #header {
         display: flex;
         justify-content: space-between;
         
@@ -58,10 +90,127 @@ header {
 }
 
 main {
-    img {
-        width: 35%;
-        position: relative;
-        left: 35%;
+    .mokup {
+        img {
+            margin-top: 20px;
+            width: 100%;
+            left: 35%;
+
+            @include responsive(pc-screens) {
+                margin-top: -50px;
+                width: 45%;
+                margin-left: 25%;
+            }
+        }
+    }
+
+    #grid_system {
+        .grid_info {
+            margin-top: 30px;
+
+            @include responsive(pc-screens) {
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            img {
+                width: 100%;
+
+                @include responsive(pc-screens) {
+                    width: 60%;
+                }
+            }
+        }
+        .info {
+            margin-top: 20px;
+        }
+        .image {
+            margin-top: 80px;
+            left: 20%;
+
+            @include responsive(pc-screens) {
+                position: absolute;
+                top: 390px;
+                left: 930px;
+            }
+
+            img {
+                width: 100%;
+
+                @include responsive(pc-screens) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .color_info {
+        img {
+            width: 100%;
+            margin-top: 40px;
+
+            @include responsive(pc-screens) {
+                width: 50%;
+                margin-left: 25%;
+                margin-top: 70px;
+            }
+        }
+    }
+
+    .typography_info {
+        
+        .font {
+            @include responsive(pc-screens) {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 100px;
+            }
+            .watermelon {
+                margin-bottom: 70px;
+                img {
+                    width: 70%;
+                    @include responsive(pc-screens) {
+                        width: 100%;
+                    }
+                }
+            }
+            .maruburi {
+                img {
+                    width: 70%;
+                    @include responsive(pc-screens) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #main_page {
+        .title {
+            margin-bottom: 30px;
+        }
+        .main_info {
+            img {
+                width: 100%;
+                margin-bottom: 20px;
+                @include responsive(pc-screens) {
+                    width: 45%;
+                    margin-left: 25%;
+                    margin-bottom: 70px;
+                }
+            }
+            .content {
+                @include responsive(pc-screens) {
+                    margin-left: 25%;
+                }
+            }
+        }
+    }
+
+    #full_view {
+        img {
+            width: 100%;
+        }
     }
 }
 

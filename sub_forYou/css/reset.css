@@ -25,9 +25,32 @@ a:hover {
   font-weight: bold;
 }
 
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.9em;
+  font-weight: normal;
+  font-color: #fff;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-color: #fff;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: normal;
+  font-color: #fff;
+}
+
 p {
-  font-size: 0.8em;
-  line-height: 1.8em;
+  font-size: 1em;
+  line-height: 2em;
 }
 
 hr {

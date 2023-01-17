@@ -9,7 +9,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-color: #fff;
+  color: #fff;
+  font-family: "SCoreDream";
 }
 
 ul,
@@ -25,9 +26,26 @@ a:hover {
   font-weight: bold;
 }
 
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.9em;
+  font-weight: normal;
+  font-color: #fff;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+  font-color: #fff;
+}
+
 p {
-  font-size: 0.8em;
-  line-height: 1.8em;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 hr {
@@ -56,41 +74,183 @@ body {
   background-color: #080e2b;
 }
 
+section {
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 18px;
+  }
+}
+
 header {
   width: 100%;
 }
-header .main {
+header #header {
   display: flex;
   justify-content: space-between;
 }
-header .main .logo {
+header #header .logo {
   transform: translateY(-50%);
   padding-top: 100px;
   margin-left: 20px;
   margin-bottom: -50px;
 }
 @media screen and (min-width: 1024px) {
-  header .main .logo {
+  header #header .logo {
     left: 41px;
   }
 }
-header .main .logo a:hover {
+header #header .logo a:hover {
   opacity: 0.5;
 }
-header .main .git {
+header #header .git {
   padding-top: 25px;
   margin-right: 20px;
 }
-header .main .git a:hover {
+header #header .git a:hover {
   opacity: 0.5;
 }
-header .main .git a img {
+header #header .git a img {
   width: 50px;
 }
 
-main img {
+main .mokup img {
+  margin-top: 20px;
   width: 100%;
-  margin-bottom: 100px;
+  left: 35%;
+}
+@media screen and (min-width: 1024px) {
+  main .mokup img {
+    margin-top: -50px;
+    width: 45%;
+    margin-left: 25%;
+  }
+}
+main #grid_system .grid_info {
+  margin-top: 30px;
+}
+@media screen and (min-width: 1024px) {
+  main #grid_system .grid_info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+main #grid_system .grid_info img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  main #grid_system .grid_info img {
+    width: 60%;
+  }
+}
+main #grid_system .info {
+  margin-top: 20px;
+}
+main #grid_system .image {
+  margin-top: 80px;
+  left: 20%;
+}
+@media screen and (min-width: 1024px) {
+  main #grid_system .image {
+    position: absolute;
+    top: 390px;
+    left: 930px;
+  }
+}
+main #grid_system .image img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  main #grid_system .image img {
+    width: 100%;
+  }
+}
+main .color_info img {
+  width: 100%;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1024px) {
+  main .color_info img {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .typography_info .font {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+}
+main .typography_info .font .watermelon {
+  margin-bottom: 70px;
+}
+main .typography_info .font .watermelon img {
+  width: 70%;
+}
+@media screen and (min-width: 1024px) {
+  main .typography_info .font .watermelon img {
+    width: 100%;
+  }
+}
+main .typography_info .font .maruburi img {
+  width: 70%;
+}
+@media screen and (min-width: 1024px) {
+  main .typography_info .font .maruburi img {
+    width: 100%;
+  }
+}
+main #main_page .title {
+  margin-bottom: 30px;
+}
+main #main_page .main_info img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  main #main_page .main_info img {
+    width: 45%;
+    margin-left: 25%;
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main #main_page .main_info .content {
+    margin-left: 25%;
+  }
+}
+main #full_view img {
+  width: 100%;
 }
 
 footer p {

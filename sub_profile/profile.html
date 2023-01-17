@@ -5,23 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Fairmont_Design Guide</title>
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+    <title>Profile_Design Guide</title>
 </head>
 <body>
     <header>
-        <div class="main">
+        <div id="header">
             <div class="logo">
                 <a href="../index.html"><img src="./img/logo.png"></a>
             </div>
             <div class="git">
-                <a href="https://github.com/chaerrin/profile.git"><img src="./img/github-logo.png"></a>
+                <a href="https://github.com/chaerrin/for_you.git"><img src="./img/github-logo.png"></a>
             </div>
         </div>
     </header>
     <main>
-        <div class="container">
-            <img src="./img/Design_Guide.png">
-        </div>
+        <section id="web">
+            <div class="container">
+                <div class="mokup">
+                    <img src="./img/first.png" alt="first">
+                </div>
+            </div>
+        </section>
+        <section id="grid_system">
+            <div class="container">
+                <div class="title">
+                    <h1>01</h1>
+                    <h3>프로필 디자인 프로세스</h3>
+                </div>
+                <div class="grid_info">
+                    <img src="./img/grid.png" alt="grid">
+                    <div class="info">
+                        <h2>GRID SYSTEM</h2>
+                        <p>Full Width : 1920px <br>
+                            Grid Width : 1200px <br>
+                            Column Width : 85px <br>
+                            Gutter Width : 25px <br>
+                            Number of Column : 12
+                        </p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./img/grid_info.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="color_system">
+            <div class="container">
+                <div class="color_info">
+                    <h2>COLOR SYSTEM</h2>
+                    <p>
+                        기존 어플을 홈페이지로 리뉴얼을 진행하여 주 타겟층인 시각장애인들이 구분하기 쉬운 노란색 계열을 포인트 색상으로 지정하였습니다.<br><br>
+                        전체적인 디자인은 어플의 메인 색상과 동일한 색상으로 지정하였습니다.
+                    </p>
+                    <img src="./img/color_info.png" alt="color_info">
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <div class="container">
+                <div class="typography_info">
+                    <h2>TYPOGRAPHY</h2>
+                    <div class="font">
+                        <div class="watermelon">
+                            <img src="./img/116watermelon.png" alt="116watermelon">
+                        </div>
+                        <div class="maruburi">
+                            <img src="./img/maruburi.png" alt="maruburi">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main_page">
+            <div class="container">
+                <div class="title">
+                    <h1>02</h1>
+                    <h3>프로필 메인페이지</h3>
+                </div>
+                <div class="main_info">
+                    <img src="./img/first.png" alt="first">
+                    <div class="content">
+                        <p>
+                            메인페이지는 소비자가 어플을 다운받을 수 있도록 헤더 부분에 다운로드 버튼을 배치하였습니다. <br>
+                            또한 어플의 실행 영상과 어플의 기능에 대한 설명을 넣어 제품에 대한 정보를 알 수 있도록 하였습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="full_view">
+            <div class="container">
+                <img src="./img/full_view.png" alt="full_view">
+            </div>
+        </section>
     </main>
     <hr>
     <footer>
@@ -29,7 +110,7 @@
 
         <div class="fixed-menu">
             <ul>
-                <li><a onclick="goToScroll('main')"><img src="./img/up-w.png"></a></li>
+                <li><a onclick="goToScroll('header')"><img src="./img/up-w.png"></a></li>
             </ul>
         </div>
     </footer>
