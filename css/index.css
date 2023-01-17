@@ -51,6 +51,7 @@ h4 {
   font-size: 1em;
   font-weight: normal;
   font-color: #fff;
+  font-family: "Lemon/Milk light", sans-serif;
 }
 
 p {
@@ -844,8 +845,8 @@ main .skills .container .circle-menu .list .react:hover {
 }
 main .skills .container .cont_area {
   position: absolute;
-  margin-top: -450px;
-  margin-left: 100px;
+  margin-top: -470px;
+  margin-left: 110px;
   color: #fff;
   text-align: center;
   width: 200px;
@@ -894,6 +895,8 @@ main .skills .container .cont_area div img {
 main .skills .container .cont_area div h4 {
   font-size: 30px;
   margin-bottom: -4px;
+  font-family: "Lemon/Milk light", sans-serif;
+  font-weight: bold;
 }
 @media screen and (min-width: 768px) {
   main .skills .container .cont_area div h4 {
@@ -907,9 +910,10 @@ main .skills .container .cont_area div h4 {
 }
 main .skills .container .cont_area div p {
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 15px;
   text-align: left;
+  font-family: "SCoreDream";
 }
 @media screen and (min-width: 768px) {
   main .skills .container .cont_area div p {

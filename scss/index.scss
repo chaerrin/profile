@@ -738,8 +738,8 @@ main {
             
             .cont_area {
                 position: absolute;
-                margin-top: -450px;
-                margin-left: 100px;
+                margin-top: -470px;
+                margin-left: 110px;
                 color: #fff;
                 text-align: center;
                 width: 200px;
@@ -783,6 +783,8 @@ main {
                     h4 {
                         font-size: 30px;
                         margin-bottom: -4px;
+                        font-family: $eng_title_font;
+                        font-weight: bold;
 
                         @include responsive(tablet-screens) {
                             font-size: 1.8em;
@@ -793,9 +795,10 @@ main {
                     }
                     p {
                         font-size: 14px;
-                        margin-top: 15px;
+                        margin-top: 20px;
                         margin-left: 15px;
                         text-align: left;
+                        font-family: $common_font;
 
                         @include responsive(tablet-screens) {
                             width: 65%;
