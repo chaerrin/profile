@@ -74,6 +74,7 @@ footer {
   margin: 0 auto;
   padding: 0 40px;
   width: 100%;
+  background-color: aqua;
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -691,21 +692,21 @@ main .skills .container .circle-menu .list .html {
   position: absolute;
   top: 6.5%;
   left: 23%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 @media screen and (min-width: 768px) {
   main .skills .container .circle-menu .list .html {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     top: 3%;
     left: 50%;
   }
 }
 @media screen and (min-width: 1024px) {
   main .skills .container .circle-menu .list .html {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     top: 1%;
     left: 50%;
   }
@@ -717,21 +718,21 @@ main .skills .container .circle-menu .list .css {
   position: absolute;
   top: 11%;
   left: 42%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 @media screen and (min-width: 768px) {
   main .skills .container .circle-menu .list .css {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     top: 18%;
     left: 76%;
   }
 }
 @media screen and (min-width: 1024px) {
   main .skills .container .circle-menu .list .css {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     top: 17%;
     left: 78%;
   }

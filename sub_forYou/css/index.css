@@ -249,6 +249,9 @@ main #main_page .main_info img {
     margin-left: 25%;
   }
 }
+main #full_view .title {
+  margin-bottom: 30px;
+}
 main #full_view img {
   width: 100%;
 }
