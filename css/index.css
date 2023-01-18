@@ -585,8 +585,8 @@ main .skills .container .circle-menu .list .ai:hover {
 }
 main .skills .container .circle-menu .list .c {
   position: absolute;
-  top: 20%;
-  left: 9%;
+  top: 22%;
+  left: 6%;
   width: 50px;
   height: 50px;
 }
@@ -690,7 +690,7 @@ main .skills .container .circle-menu .list .python:hover {
 main .skills .container .circle-menu .list .html {
   position: absolute;
   top: 6.5%;
-  left: 30%;
+  left: 23%;
   width: 60px;
   height: 60px;
 }
@@ -715,8 +715,8 @@ main .skills .container .circle-menu .list .html:hover {
 }
 main .skills .container .circle-menu .list .css {
   position: absolute;
-  top: 20%;
-  left: 53%;
+  top: 11%;
+  left: 42%;
   width: 60px;
   height: 60px;
 }
@@ -802,7 +802,7 @@ main .skills .container .circle-menu .list .jq {
   main .skills .container .circle-menu .list .jq {
     width: 55px;
     height: 55px;
-    top: 40%;
+    top: 45%;
     left: 9%;
   }
 }
@@ -843,10 +843,88 @@ main .skills .container .circle-menu .list .react {
 main .skills .container .circle-menu .list .react:hover {
   opacity: 0.5;
 }
+main .skills .container .circle-menu .list .nodejs {
+  position: absolute;
+  top: 25%;
+  left: 55%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .nodejs {
+    width: 55px;
+    height: 55px;
+    top: 50%;
+    left: 83%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .nodejs {
+    width: 60px;
+    height: 60px;
+    top: 45%;
+    left: 87%;
+  }
+}
+main .skills .container .circle-menu .list .nodejs:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .bootstrap {
+  position: absolute;
+  top: 74%;
+  left: 35%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .bootstrap {
+    width: 55px;
+    height: 55px;
+    top: 79%;
+    left: 47%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .bootstrap {
+    width: 60px;
+    height: 60px;
+    top: 81%;
+    left: 50%;
+  }
+}
+main .skills .container .circle-menu .list .bootstrap:hover {
+  opacity: 0.5;
+}
+main .skills .container .circle-menu .list .git {
+  position: absolute;
+  top: 14%;
+  left: 4%;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .skills .container .circle-menu .list .git {
+    width: 55px;
+    height: 55px;
+    top: 30%;
+    left: 11%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .skills .container .circle-menu .list .git {
+    width: 60px;
+    height: 60px;
+    top: 28%;
+    left: 9%;
+  }
+}
+main .skills .container .circle-menu .list .git:hover {
+  opacity: 0.5;
+}
 main .skills .container .cont_area {
   position: absolute;
-  margin-top: -470px;
-  margin-left: 110px;
+  margin-top: -460px;
+  margin-left: 105px;
   color: #fff;
   text-align: center;
   width: 200px;
@@ -855,7 +933,7 @@ main .skills .container .cont_area {
   main .skills .container .cont_area {
     position: absolute;
     margin-top: -450px;
-    margin-left: 50%;
+    margin-left: 47%;
     width: 350px;
     text-align: center;
     -webkit-transform: translate(-50%, -50%);
@@ -910,9 +988,8 @@ main .skills .container .cont_area div h4 {
 }
 main .skills .container .cont_area div p {
   font-size: 14px;
-  margin-top: 20px;
-  margin-left: 15px;
-  text-align: left;
+  margin-top: 30px;
+  text-align: center;
   font-family: "SCoreDream";
 }
 @media screen and (min-width: 768px) {
@@ -921,14 +998,14 @@ main .skills .container .cont_area div p {
     font-size: 1em;
     line-height: 1.5em;
     margin: auto;
-    margin-top: 13px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
   main .skills .container .cont_area div p {
     width: 80%;
     font-size: 1.05em;
-    margin-left: 50px;
+    margin-top: 30px;
   }
 }
 main #portfolio {
