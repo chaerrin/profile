@@ -115,6 +115,7 @@ main {
     
             img {
                 width: 100%;
+                border: 2px solid #fff;
 
                 @include responsive(pc-screens) {
                     width: 60%;
@@ -210,6 +211,7 @@ main {
     #full_view {
         img {
             width: 100%;
+            border: 2px solid #fff;
         }
     }
 }

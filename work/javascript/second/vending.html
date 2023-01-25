@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/vendingMachine.js"></script>
+  <title>자판기</title>
+</head>
+<body>
+  <div class="wrap">
+    <div id="wrapper"> 
+      <div id="title"><img src="./img/storyway_w.png" width=500></div>
+      <div id="items"><img src="./img/water.png" width=50 height=120><input id="menuButton1" type=button value="￦1,000"></div>
+      <div id="items"><img src="./img/oksusu.png" width=50 height=120><input id="menuButton2" type=button value="￦1,600"></div>
+      <div id="items"><img src="./img/blackbori.png" width=50 height=120><input id="menuButton3" type=button value="￦1,600"></div>
+      <div id="insert"> 
+        <input type=text id="total" readonly>
+        <input type=button id="insert100" value="￦100">
+        <input type=button id="insert500" value="￦500">
+        <input type=button id="insert1000" value="￦1000"> 
+      </div>
+      <div id="items"><img src="./img/cola.png" width=50><input id="menuButton4" type=button value="￦2,000"></div>
+      <div id="items"><img src="./img/cocopam.png" width=50><input id="menuButton5" type=button value="￦1,200"></div>
+      <div id="items"><img src="./img/pocari.png" width=50><input id="menuButton6" type=button value="￦1,800"></div>
+      <div id="return"><input type=button id="returnButton" value="거스름돈"></div>
+      <div id="items"><img src="./img/choco.png" width=50><input id="menuButton7" type=button value="￦1,100"></div>
+      <div id="items"><img src="./img/letsbe.png" width=50><input id="menuButton8" type=button value="￦1,000"></div>
+      <div id="items"><img src="./img/latte.png" width=50><input id="menuButton9" type=button value="￦1,300"></div>
+      <div id="coin">
+        <input class="coindata" type=text readonly value="500원"><input id="return500" type=text class="coindata" readonly>
+        <input type=text class="coindata" readonly value="100원"><input id="return100" type=text class="coindata" readonly>
+        <input type=button id="confirm" value="확인">
+      </div>
+      <div id="selected"></div>
+    </div>
+    <div id="basket">
+      <div id="basketTitle"><input type=text value="구매 품목" disabled></div>
+      <div id="basketItems"></div>
+    </div>
+  </div>
+</body>
+</html>

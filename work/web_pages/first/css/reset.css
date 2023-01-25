@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@font-face{
+   src:url("../font/MaruBuri-SB/MaruBuri-SemiBold.ttf");
+   font-family : "MaruBuri-SB";
+}
+
+@font-face{
+   src:url("../font/MaruBuri-R/MaruBuri-Regular.ttf");
+   font-family : "MaruBuri-R";
+}
+
+@font-face{
+   src:url("../font/116watermelon/116watermelon.ttf");
+   font-family : "116watermelon";
+}
+
+html, 
+body {
+   color: #f7f8fa;
+   font-family: "MaruBuri-R";
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+a {
+   display: block;
+   text-decoration: none;
+}
+
+strong {
+   display: block;
+}
+
+h1 {
+   font-size: 36px;
+   font-family: "116watermelon";
+   
+}
+
+hr {
+   color: #f7f8fa;
+}
+
+h2 {
+   font-size: 40px;
+   font-family: "MaruBuri-SB";
+}
+
+h3 {
+   font-size: 34px;
+}
+
+h4 {
+   font-size: 25px;
+}
+
+h5 {
+   font-size: 20px;
+}
+
+h6 {
+   font-size: 16px;
+}
+
+p {
+   font-size: 14px;
+}
+
+header, 
+nav, 
+main,
+article,
+section,
+footer {
+   display: block;
+}
+
+footer {
+   font-family: "맑은 고딕";
+}

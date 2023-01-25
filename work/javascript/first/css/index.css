@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #282828;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(90%);
+}
+button:focus {
+  filter: brightness(60%);
+}
+
+.caculator {
+  position: relative;
+  width: 95%;
+  max-width: 300px;
+  background: #000000;
+  border-radius: 4px;
+  box-shadow: 5px 5px 1rem rgba(0, 0, 0, 0.2);
+}
+.caculator #show {
+  position: relative;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: right;
+}
+.caculator #show #steps {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem 1.25rem 0.5rem;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.caculator #show .off {
+  opacity: 0;
+}
+.caculator #show #display {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  white-space: normal;
+  word-break: break-all;
+  padding: 0 1rem;
+  padding-bottom: 1.25rem;
+  border: none;
+  text-align: right;
+  font-size: 2rem;
+  color: #fff;
+}
+.caculator #btn {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.caculator #btn .nums {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  width: 75%;
+}
+.caculator #btn .nums #reset {
+  display: block;
+  width: 33.33%;
+  aspect-ratio: 1/1;
+  background: #A5A5A5;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+}
+.caculator #btn .nums .num {
+  display: block;
+  width: 33.33%;
+  aspect-ratio: 1/1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #333333;
+  font-size: inherit;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.caculator #btn .nums [data-val="-1"],
+.caculator #btn .nums [data-val="/100"] {
+  background: #A5A5A5;
+  color: #000000;
+}
+.caculator #btn .nums #zero {
+  width: 66.66%;
+  aspect-ratio: 2/1;
+}
+
+.options {
+  position: relative;
+  width: 25%;
+}
+.options .op {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #FF9F0A;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.options #btn_result {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #FF9F0A;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}

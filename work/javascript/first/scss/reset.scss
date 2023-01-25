@@ -1,0 +1,30 @@
+@import "./style.scss";
+@import "./mixin.scss";
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+html, body {
+    display : flex;
+    flex-flow : column nowrap;
+    justify-content : center; 
+    align-items : center;
+    width : 100%;
+    min-height : 100vh;
+    background : #282828;
+}
+
+button {
+    cursor : pointer;
+
+    &:hover {
+        filter : brightness(90%);
+    }
+
+    &:focus {
+        filter : brightness(60%);
+    }
+}

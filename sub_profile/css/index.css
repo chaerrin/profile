@@ -165,6 +165,7 @@ main #grid_system .grid_info {
 }
 main #grid_system .grid_info img {
   width: 100%;
+  border: 2px solid #fff;
 }
 @media screen and (min-width: 1024px) {
   main #grid_system .grid_info img {
@@ -251,6 +252,7 @@ main #main_page .main_info img {
 }
 main #full_view img {
   width: 100%;
+  border: 2px solid #fff;
 }
 
 footer p {

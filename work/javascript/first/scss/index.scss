@@ -1,0 +1,110 @@
+@import './style.scss';
+@import './reset.scss';
+@import './mixin.scss';
+
+.caculator {
+    position : relative;
+    width : 95%; 
+    max-width : 300px;
+    background : #000000;
+    border-radius : 4px;
+    box-shadow : 5px 5px 1rem rgba(0,0,0,.2);
+    
+    #show {
+        position : relative;
+        width : 100%;
+        background : rgba(255,255,255,.1);
+        border-bottom : 1px solid rgba(0,0,0,.3);
+        text-align : right;
+        
+        #steps {
+            position : relative;
+            width : 100%;
+            padding : 1.5rem 1.25rem .5rem;
+            font-size : 14px; 
+            color:rgba(255,255,255,.4);
+        }
+        .off {
+            opacity : 0;
+        }
+        #display{
+            display : block;
+            position : relative;
+            width : 100%; 
+            height : auto;
+            white-space : normal;
+            word-break : break-all;
+            padding : 0 1rem; 
+            padding-bottom : 1.25rem;
+            border : none;
+            text-align : right;
+            font-size : 2rem; 
+            color : #fff;
+        }
+    }
+    #btn {
+        position : relative;
+        display : flex;
+        flex-flow : row wrap;
+        justify-content : space-between;
+        align-items : flex-start;
+        
+        .nums {
+            display : flex;
+            flex-flow : row wrap;
+            position : relative;
+            width : 75%;
+            #reset {
+                display : block;
+                width : 33.33%; aspect-ratio : 1/1;
+                background : #A5A5A5;
+                border : 1px solid rgba(0,0,0,.2);
+                font-size : 1rem; 
+                font-weight : bold; 
+                color : #000000;
+            }
+            .num {
+                display : block;
+                width : 33.33%; aspect-ratio : 1/1;
+                border : 1px solid rgba(0,0,0,0.2);
+                background : #333333;
+                font-size : inherit; 
+                font-weight : bold; 
+                color : rgba(255,255,255,1);
+            }
+
+            [data-val = "-1"],
+            [data-val = "/100"] {
+                background : #A5A5A5; 
+                color : #000000;
+            }
+            #zero {
+                width : 66.66%; aspect-ratio:2/1;
+            }
+        }
+    }
+}
+
+.options {
+    position : relative;
+    width : 25%;
+    
+    .op {
+        display : block;
+        width : 100%; aspect-ratio : 1/1;
+        background : #FF9F0A;
+        border : 1px solid rgba(0,0,0,0.2);
+        font-size : 1.5rem; 
+        font-weight : bold; 
+        color : #fff;
+    }
+    #btn_result {
+        display : block;
+        width : 100%; aspect-ratio : 1/1;
+        background : #FF9F0A;
+        border : 1px solid rgba(0,0,0,.2);
+        font-size : 2rem; 
+        font-weight : bold; 
+        color : #fff;
+    }
+}
