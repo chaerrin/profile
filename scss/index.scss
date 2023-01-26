@@ -64,8 +64,6 @@ header {
     
     .flex-box {
         position: relative;
-        display: flex;
-        justify-content: space-between;
         width: 100%;
         height: 63px;
 
@@ -155,20 +153,34 @@ header {
             }
             
             .gnb {
-                display: flex;
-                justify-content: space-between;
                 li {
+                    display: inline-block;
                     padding: 0 20px;
+                    &:after {
+                        display: block;
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        background-color: white;
+                        transform: scale(0);
+
+                        transition: transform 0.5s;
+                    }
+                    &:hover::after {
+                        transform: scale(1);
+                    }
                     a {
                         color: $title-color;
                         font-family: $eng_title_font;
-                        transition-duration: 0.3s;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: #d3d3d3;
+                        }
                     }
                 }
-
             }
         }
-
     }
 
 } // header
@@ -351,13 +363,17 @@ main {
     
                 .circle {
                     position: absolute;
-                    top: 45%;
+                    top: 40%;
                     left: 29%;
                     -webkit-transform: translate(-50%, -29%);
                             transform: translate(-50%, -29%);
     
                     @include responsive(tablet-screens) {
+                        top: 45%;
                         left: 50%;
+                    }
+                    @include responsive(pc-screens) {
+                        top: 40%;
                     }
     
                     div {
@@ -447,7 +463,7 @@ main {
 
                     .adobe {
                         position: absolute;
-                        top: 21%;
+                        top: 16%;
                         left: 25.5%;
                         width: 50px;
                         height: 50px;
@@ -461,7 +477,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 15%;
+                            top: 10%;
                             left: 50%;
                         }
     
@@ -471,7 +487,7 @@ main {
                     }
                     .ai {
                         position: absolute;
-                        top: 63%;
+                        top: 58%;
                         left: 25.5%;
                         width: 50px;
                         height: 50px;
@@ -479,13 +495,13 @@ main {
                         @include responsive(tablet-screens) {
                             width: 55px;
                             height: 55px;
-                            top: 65%;
+                            top: 66%;
                             left: 47%;
                         }
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 69%;
+                            top: 64%;
                             left: 47%;
                         }
     
@@ -495,7 +511,7 @@ main {
                     }
                     .c {
                         position: absolute;
-                        top: 22%;
+                        top: 17%;
                         left: 6%;
                         width: 50px;
                         height: 50px;
@@ -509,7 +525,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 20%;
+                            top: 15%;
                             left: 21%;
                         }
     
@@ -519,7 +535,7 @@ main {
                     }
                     .java {
                         position: absolute;
-                        top: 45%;
+                        top: 40%;
                         left: -2%;
                         width: 50px;
                         height: 50px;
@@ -533,7 +549,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 61%;
+                            top: 56%;
                             left: 20%;
                         }
     
@@ -543,7 +559,7 @@ main {
                     }
                     .sql {
                         position: absolute;
-                        top: 65%;
+                        top: 60%;
                         left: 40%;
                         width: 50px;
                         height: 50px;
@@ -557,7 +573,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 55%;
+                            top: 50%;
                             left: 78%;
                         }
     
@@ -567,7 +583,7 @@ main {
                     }
                     .python {
                         position: absolute;
-                        top: 40%;
+                        top: 35%;
                         left: 53%;
                         width: 50px;
                         height: 50px;
@@ -581,7 +597,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 30%;
+                            top: 25%;
                             left: 78%;
                         }
     
@@ -591,7 +607,7 @@ main {
                     }
                     .html {
                         position: absolute;
-                        top: 6.5%;
+                        top: 1.5%;
                         left: 23%;
                         width: 50px;
                         height: 50px;
@@ -605,7 +621,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 1%;
+                            top: -4%;
                             left: 50%;
                         }
                         &:hover {
@@ -614,7 +630,7 @@ main {
                     }
                     .css {
                         position: absolute;
-                        top: 11%;
+                        top: 6%;
                         left: 42%;
                         width: 50px;
                         height: 50px;
@@ -628,7 +644,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 17%;
+                            top: 12%;
                             left: 78%;
                         }
                         &:hover {
@@ -637,7 +653,7 @@ main {
                     }
                     .sass {
                         position: absolute;
-                        top: 59%;
+                        top: 54%;
                         left: 54%;
                         width: 50px;
                         height: 50px;
@@ -652,7 +668,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 70%;
+                            top: 65%;
                             left: 75%;
                             
                         }        
@@ -663,7 +679,7 @@ main {
                     }
                     .js {
                         position: absolute;
-                        top: 74%;
+                        top: 69%;
                         left: 16%;
                         width: 50px;
                         height: 50px;
@@ -677,7 +693,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 75%;
+                            top: 70%;
                             left: 24%;
                         }        
     
@@ -687,7 +703,7 @@ main {
                     }
                     .jq {
                         position: absolute;
-                        top: 58%;
+                        top: 53%;
                         left: -4%;
                         width: 50px;
                         height: 50px;
@@ -701,7 +717,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 50%;
+                            top: 45%;
                             left: 8%;
                         }        
     
@@ -711,7 +727,7 @@ main {
                     }
                     .react {
                         position: absolute;
-                        top: 28%;
+                        top: 23%;
                         left: -5%;
                         width: 50px;
                         height: 50px;
@@ -725,7 +741,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 10%;
+                            top: 5%;
                             left: 23%;
                         }        
     
@@ -735,7 +751,7 @@ main {
                     }
                     .nodejs {
                         position: absolute;
-                        top: 25%;
+                        top: 20%;
                         left: 55%;
                         width: 50px;
                         height: 50px;
@@ -749,7 +765,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 45%;
+                            top: 40%;
                             left: 87%;
                         }        
     
@@ -759,7 +775,7 @@ main {
                     }
                     .bootstrap {
                         position: absolute;
-                        top: 74%;
+                        top: 69%;
                         left: 35%;
                         width: 50px;
                         height: 50px;
@@ -773,7 +789,7 @@ main {
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 81%;
+                            top: 77%;
                             left: 50%;
                         }        
     
@@ -783,7 +799,7 @@ main {
                     }
                     .git {
                         position: absolute;
-                        top: 14%;
+                        top: 9%;
                         left: 4%;
                         width: 50px;
                         height: 50px;
@@ -791,13 +807,13 @@ main {
                         @include responsive(tablet-screens) {
                             width: 55px;
                             height: 55px;
-                            top: 30%;
+                            top: 29%;
                             left: 11%;
                         }
                         @include responsive(pc-screens) {
                             width: 60px;
                             height: 60px;
-                            top: 28%;
+                            top: 23%;
                             left: 9%;
                         }        
     
@@ -810,7 +826,7 @@ main {
             
             .cont_area {
                 position: absolute;
-                margin-top: -460px;
+                margin-top: -490px;
                 margin-left: 105px;
                 color: #fff;
                 text-align: center;
@@ -826,8 +842,8 @@ main {
                             transform: translate(-50%, -50%);
                 }
                 @include responsive(pc-screens) {
-                    width: 420px;
-                    margin-top: -550px;
+                    width: 400px;
+                    margin-top: -600px;
                     margin-left: 50%;
                 }
 

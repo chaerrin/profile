@@ -18,18 +18,8 @@ section {
     height: 100%;
 }
 
-ul,
-ol {
-    list-style: none;
-}
-
-a {
-    display: block;
-    text-decoration: none;
-
-    &:hover {
-        font-weight: bold;
-    }
+ul {
+    list-style-type : none;
 }
 
 h1 {
@@ -65,7 +55,6 @@ h4 {
     }
 }
 
-
 p {
     font-size: 0.8em;
     line-height: 1.8em;
@@ -74,7 +63,6 @@ p {
 hr {
     color: #fff;
 }
-
 
 header,
 main, 
