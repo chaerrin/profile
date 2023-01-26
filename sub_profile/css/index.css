@@ -212,22 +212,22 @@ main .color_info img {
     margin-top: 100px;
   }
 }
-main .typography_info .font .watermelon {
+main .typography_info .font .score_dream {
   margin-bottom: 70px;
 }
-main .typography_info .font .watermelon img {
+main .typography_info .font .score_dream img {
   width: 70%;
 }
 @media screen and (min-width: 1024px) {
-  main .typography_info .font .watermelon img {
+  main .typography_info .font .score_dream img {
     width: 100%;
   }
 }
-main .typography_info .font .maruburi img {
+main .typography_info .font .lemonMilk img {
   width: 70%;
 }
 @media screen and (min-width: 1024px) {
-  main .typography_info .font .maruburi img {
+  main .typography_info .font .lemonMilk img {
     width: 100%;
   }
 }

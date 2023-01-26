@@ -169,7 +169,7 @@ header .flex-box .overlay a {
   transition: 0.3s;
 }
 header .flex-box .overlay a:hover, header .flex-box .overlay a:focus {
-  color: rgba(199, 197, 197, 0.4862745098);
+  color: #c7c5c5;
 }
 header .flex-box .overlay .closebtn {
   position: absolute;
