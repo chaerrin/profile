@@ -1209,19 +1209,23 @@ main .contact .flex-box form .flex-box-inner div div textarea {
   overflow-y: scroll;
   background-color: transparent;
   color: #fff;
+  padding-bottom: 4px;
 }
 @media screen and (min-width: 1024px) {
   main .contact .flex-box form .flex-box-inner div div textarea {
     overflow-y: hidden;
   }
 }
-main .contact .flex-box form input[type=button] {
+main .contact .flex-box form button {
   float: right;
   padding: 10px;
   margin-top: 30px;
   color: #000;
   cursor: pointer;
   border: 0;
+}
+main .contact .flex-box form button:hover {
+  opacity: 0.6;
 }
 
 footer p {

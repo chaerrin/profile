@@ -1094,6 +1094,7 @@ main {
                                 overflow-y: scroll; 
                                 background-color: transparent;
                                 color: #fff;
+                                padding-bottom: 4px;
                                 
                                 @include responsive(pc-screens) {
                                     overflow-y: hidden;
@@ -1103,13 +1104,17 @@ main {
                     }
                 }
         
-                input[type=button] {  
+                button {  
                     float: right;   
                     padding: 10px;
                     margin-top: 30px;
                     color: #000;
                     cursor: pointer;
                     border: 0;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
                 }
             } // form
         }

@@ -526,22 +526,23 @@
             <div class="container">
                 <div class="flex-box">
                     <h3>CONTACT</h3>
-                    <form action="#">
+                    <form method="POST" target="iframe1" action="https://script.google.com/macros/s/AKfycbwi5_MWuDuhsmGoVs83MqAd-o_3bxghPuVBvpU6nZRkGgerLbDoOAM6Ui-wKw5mduKa/exec">
                         <div class="flex-box-inner">
                             <div>
-                                <label>Name<input type="text" id="name"></label>
-                                <label>Phone<input type="text" id="phone"></label>
-                                <label>Email Address<input type="email" id="email"></label>
+                                <label>Name<input type="text" id="name" name="name" placeholder="Your Name" autocomplete="off"></label>
+                                <label>Phone<input type="text" id="phone" name="phone" placeholder="Your phone" autocomplete="off"></label>
+                                <label>Email Address</Address><input type="email" id="email" name="email" placeholder="Email" autocomplete="off"></label>
                             </div>
                             <div>
                                 <div>
                                     <label for="message">Message</label>
-                                    <textarea id="message" cols="30" rows="8"></textarea>
+                                    <textarea id="message" name="message" placeholder="Your Message" autocomplete="off" cols="30" rows="8" required></textarea>
                                 </div>
                             </div>
                         </div>
-                        <input type="button" value="SEND MESSAGE">
+                        <button>SEND MESSAGE</button>
                     </form>
+                    <!-- <iframe id="iframe1" name="iframe1" style="display:none"></iframe> -->
                 </div>
             </div>
         </section>
