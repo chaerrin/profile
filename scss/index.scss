@@ -270,15 +270,17 @@ main {
             }
 
             .text {
-                margin-top: 280px;
+                margin-top: 30px;
                 @include responsive(pc-screens) {
                     display: flex;
                     justify-content: space-between;
                     margin-top: 100px;
                 }
                 .one {
+                    padding-bottom: 10px;
                     @include responsive(pc-screens) {
                         margin-right: 150px;
+                        padding-bottom: 0px;
                     }
                     img {
                         width: 220px;

@@ -326,7 +326,7 @@ main .about .flex-box h3 {
   }
 }
 main .about .flex-box .text {
-  margin-top: 280px;
+  margin-top: 30px;
 }
 @media screen and (min-width: 1024px) {
   main .about .flex-box .text {
@@ -335,9 +335,13 @@ main .about .flex-box .text {
     margin-top: 100px;
   }
 }
+main .about .flex-box .text .one {
+  padding-bottom: 10px;
+}
 @media screen and (min-width: 1024px) {
   main .about .flex-box .text .one {
     margin-right: 150px;
+    padding-bottom: 0px;
   }
 }
 main .about .flex-box .text .one img {
