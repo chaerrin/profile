@@ -1,59 +1,54 @@
-// swiper1
 new Swiper('.swiper1', {
-	pagination : { // 페이징 설정
+	pagination : {
 		el : '.swiper-pagination',
-		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+		clickable : true,
 	},
-	navigation : { // 네비게이션 설정
-		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	navigation : {
+		nextEl : '.swiper-button-next',
+		prevEl : '.swiper-button-prev',
 	},
 });
 
-// swiper2
 new Swiper('.swiper2', {
-	pagination : { // 페이징 설정
+	pagination : {
 		el : '.swiper-pagination',
-		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+		clickable : true,
 	},
-	navigation : { // 네비게이션 설정
-		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	navigation : {
+		nextEl : '.swiper-button-next',
+		prevEl : '.swiper-button-prev',
 	},
 });
 
-// swiper3
 new Swiper('.swiper3', {
-	pagination : { // 페이징 설정
+	pagination : {
 		el : '.swiper-pagination',
-		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+		clickable : true,
 	},
-	navigation : { // 네비게이션 설정
-		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	navigation : {
+		nextEl : '.swiper-button-next',
+		prevEl : '.swiper-button-prev',
 	},
 });
 
-// swiper4
 new Swiper('.swiper4', {
-	pagination : { // 페이징 설정
+	pagination : {
 		el : '.swiper-pagination',
-		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+		clickable : true,
 	},
-	navigation : { // 네비게이션 설정
-		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	navigation : {
+		nextEl : '.swiper-button-next',
+		prevEl : '.swiper-button-prev',
 	},
 });
 
-// swiper5
 new Swiper('.swiper5', {
-	pagination : { // 페이징 설정
+	pagination : {
 		el : '.swiper-pagination',
-		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+		clickable : true,
 	},
-	navigation : { // 네비게이션 설정
-		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	navigation : {
+		nextEl : '.swiper-button-next',
+		prevEl : '.swiper-button-prev',
 	},
 });

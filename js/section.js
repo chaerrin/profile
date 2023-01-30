@@ -17,7 +17,6 @@ window.onload = function(){
             let moveTop = window.scrollY;
             let elmSelector = elm[index];
 
-            // wheel down : move to next section
             if (delta < 0){
                 if (elmSelector !== elmCount-1){
                     try{
@@ -25,7 +24,6 @@ window.onload = function(){
                     }catch(e){}
                 }
                 }
-                // wheel up : move to previous section
                 else{
                 if (elmSelector !== 0){
                     try{
